@@ -1,0 +1,153 @@
+[
+    {
+      "id": 1,
+      "domain": "example.com",
+      "startTime": "2024-12-09T10:00:00Z",
+      "endTime": "2024-12-09T10:30:00Z",
+      "status": "Completed",
+      "results": [
+        {
+          "subdomain": "api.example.com",
+          "ipAddress": "192.168.1.1",
+          "discoveredAt": "2024-12-09T10:10:00Z"
+        },
+        {
+          "subdomain": "blog.example.com",
+          "ipAddress": "192.168.1.2",
+          "discoveredAt": "2024-12-09T10:15:00Z"
+        },
+        {
+          "subdomain": "shop.example.com",
+          "ipAddress": "192.168.1.3",
+          "discoveredAt": "2024-12-09T10:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "domain": "testsite.com",
+      "startTime": "2024-12-08T14:00:00Z",
+      "endTime": "2024-12-08T14:20:00Z",
+      "status": "No Results Found",
+      "results": []
+    },
+    {
+      "id": 3,
+      "domain": "devsite.org",
+      "startTime": "2024-12-07T08:00:00Z",
+      "endTime": "2024-12-07T08:45:00Z",
+      "status": "Completed",
+      "results": [
+        {
+          "subdomain": "dev.devsite.org",
+          "ipAddress": "172.16.0.1",
+          "discoveredAt": "2024-12-07T08:10:00Z"
+        },
+        {
+          "subdomain": "admin.devsite.org",
+          "ipAddress": "172.16.0.2",
+          "discoveredAt": "2024-12-07T08:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "domain": "productionsite.net",
+      "startTime": "2024-12-06T16:00:00Z",
+      "endTime": "2024-12-06T16:25:00Z",
+      "status": "Completed",
+      "results": [
+        {
+          "subdomain": "cdn.productionsite.net",
+          "ipAddress": "203.0.113.1",
+          "discoveredAt": "2024-12-06T16:10:00Z"
+        },
+        {
+          "subdomain": "staging.productionsite.net",
+          "ipAddress": "203.0.113.2",
+          "discoveredAt": "2024-12-06T16:15:00Z"
+        },
+        {
+          "subdomain": "api.productionsite.net",
+          "ipAddress": "203.0.113.3",
+          "discoveredAt": "2024-12-06T16:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "domain": "mysite.info",
+      "startTime": "2024-12-10T11:00:00Z",
+      "endTime": "2024-12-10T11:35:00Z",
+      "status": "No Results Found",
+      "results": []
+    },
+    {
+      "id": 6,
+      "domain": "newdomain.biz",
+      "startTime": "2024-12-10T09:00:00Z",
+      "endTime": "2024-12-10T09:50:00Z",
+      "status": "Completed",
+      "results": [
+        {
+          "subdomain": "new.newdomain.biz",
+          "ipAddress": "198.51.100.1",
+          "discoveredAt": "2024-12-10T09:15:00Z"
+        },
+        {
+          "subdomain": "old.newdomain.biz",
+          "ipAddress": "198.51.100.2",
+          "discoveredAt": "2024-12-10T09:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "domain": "website.xyz",
+      "startTime": "2024-12-08T12:00:00Z",
+      "endTime": "2024-12-08T12:30:00Z",
+      "status": "Completed",
+      "results": [
+        {
+          "subdomain": "login.website.xyz",
+          "ipAddress": "203.0.113.10",
+          "discoveredAt": "2024-12-08T12:05:00Z"
+        },
+        {
+          "subdomain": "secure.website.xyz",
+          "ipAddress": "203.0.113.11",
+          "discoveredAt": "2024-12-08T12:20:00Z"
+        },
+        {
+          "subdomain": "dashboard.website.xyz",
+          "ipAddress": "203.0.113.12",
+          "discoveredAt": "2024-12-08T12:25:00Z"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "domain": "anothersite.co",
+      "startTime": "2024-12-07T14:30:00Z",
+      "endTime": "2024-12-07T15:10:00Z",
+      "status": "Completed",
+      "results": [
+        {
+          "subdomain": "api.anothersite.co",
+          "ipAddress": "198.51.100.10",
+          "discoveredAt": "2024-12-07T14:45:00Z"
+        },
+        {
+          "subdomain": "blog.anothersite.co",
+          "ipAddress": "198.51.100.11",
+          "discoveredAt": "2024-12-07T14:50:00Z"
+        },
+        {
+          "subdomain": "admin.anothersite.co",
+          "ipAddress": "198.51.100.12",
+          "discoveredAt": "2024-12-07T15:00:00Z"
+        }
+      ]
+    }
+  ]
+  
