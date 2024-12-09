@@ -8,7 +8,6 @@ const useScanByIdQuery = (id: string) =>
     queryFn: () => {
       const data = mockScanData.find((sc) => sc.id === +id);
       if (!data) {
-        console.log("here");
         throw new Error("Scan not found");
       }
       return data;
