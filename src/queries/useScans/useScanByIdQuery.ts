@@ -4,7 +4,7 @@ import { ScanResult } from "@/types";
 
 const useScanByIdQuery = (id: string) =>
   useQuery<ScanResult>({
-    queryKey: ["useScansQuery", id],
+    queryKey: ["useScanByIdQuery", id],
     queryFn: () => {
       const data = mockScanData.find((sc) => sc.id === +id);
       if (!data) {
@@ -12,7 +12,7 @@ const useScanByIdQuery = (id: string) =>
       }
       return data;
     },
-    enabled: !!id,
+    enabled: !!id
   });
 
 export default useScanByIdQuery;

@@ -4,8 +4,19 @@ import ScanResultsModal from "@/components/ScanResultsModal";
 import useScansQuery from "@/queries/useScans/useScansQuery";
 import { ScanData, Subdomain } from "@/types";
 import { setLocalStorageItem } from "@/utils";
-import { DndContext, DragEndEvent } from "@dnd-kit/core";
-import { arrayMove, SortableContext } from "@dnd-kit/sortable";
+import {
+  DndContext,
+  DragEndEvent,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+} from "@dnd-kit/sortable";
 import { useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
@@ -16,6 +27,16 @@ const HomePage = () => {
     null
   );
   const [searchParams] = useSearchParams();
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 5,
+      },
+    }),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
 
   const domain = searchParams.get("domain") ?? "";
 
@@ -54,7 +75,7 @@ const HomePage = () => {
               <h1 className="text-3xl font-bold mb-4 text-gray-700">
                 Scan Results
               </h1>
-              <DndContext onDragEnd={handleScanReorder}>
+              <DndContext onDragEnd={handleScanReorder} sensors={sensors}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                   <SortableContext items={scans}>
                     {scans.map((scan) => (

@@ -57,11 +57,7 @@ const ScanCard = ({ scanDetails, onShowResults }: Props) => {
         <p className="text-sm text-gray-600">Status: {status}</p>
         {results.length > 0 ? (
           <Button
-            onClick={(e) => {
-              e.stopPropagation();
-              e.preventDefault();
-              onShowResults(results);
-            }}
+            onClick={() => onShowResults(results)}
             variant="secondary"
             className="bg-gray-700 text-white hover:text-gray-950"
           >
